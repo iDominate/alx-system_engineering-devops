@@ -1,15 +1,2 @@
 #!/bin/bash
-for i in $(find -type f -iname "*.html"); do
-	
-	if [ -e ../$i ]; then
-		continue
-	else 
-		cp $i ../$i
-		
-	fi
-done
-
-
-echo "+++++++++++++++++++++++++"
-#find all files with html extention
-find -type f -iname "*.html"
+cp $(ls | grep *.html)  ..
