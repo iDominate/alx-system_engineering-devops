@@ -1,2 +1,2 @@
 #!/bin/bash
-cp $(ls | grep *.html)  ..
+cp -r $(find "." -type f -name "*.html") ../
