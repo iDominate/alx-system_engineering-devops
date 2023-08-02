@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(ls -pa | tr '  ' ',' | tr '\n' ',' | sed 's/.$//')
+ls -pa | tr '\n' ', ' | awk -F',' -v OFS=", " '$1=$1' | sed 's/, $//'
