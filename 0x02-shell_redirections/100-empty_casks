@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -laR | grep "^0$" | cut -d ' ' -f9
+find -type f,d -empty | tr -d '^./$'
