@@ -1,2 +1,2 @@
 #!/bin/bash
-find -type f,d -empty | tr -d '^./$'
+find -type f,d -empty | cut -c3-
