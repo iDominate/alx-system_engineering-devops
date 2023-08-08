@@ -1,2 +1,2 @@
 #!/bin/bash
-find -type f,d -empty | cut -c3-
+basename -a  $(find -type f,d -empty  | cut -c3-)
